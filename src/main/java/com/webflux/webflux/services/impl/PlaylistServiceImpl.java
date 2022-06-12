@@ -32,7 +32,6 @@ public class PlaylistServiceImpl implements PlaylistService {
     public Flux<Tuple2<Long, Playlist>> getPlaylistByEvents() {
         Flux<Long> interval = Flux.interval(Duration.ofSeconds(3));
         Flux<Playlist> events = findAll();
-        System.out.println("deu");
         return Flux.zip(interval, events);
     }
 }
