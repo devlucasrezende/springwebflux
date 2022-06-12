@@ -5,7 +5,7 @@ Aplicação utilizando Spring Webflux onde é possível cadastrar e visualizar P
 🛠 Tecnologias usadas:
    Java,
    Spring Webflux,
-   Reactive MongoDB,
+   Reactive MongoDB.
    
 O interessante da aplicação é verificar que no endpoint /events é possível setar um interval que determina quantos segundos uma resposta será dada ao cliente.
 Durante esse período outras requisições podem ser feitas pois o Spring Webflux lida com tais requisições de forma reativa e não bloqueante!
